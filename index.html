@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeTest</title>
+    <link rel="icon" href="favicon.png">
+    <link rel=" stylesheet" href="style.css">
+</head>
+
+<body>
+    <aside id="speedy-aside" role="complementary" class="js-fullheight">
+
+        <a href=".">
+            <h1>TypeTest</h1>
+        </a>
+
+        <nav id="speedy-main-menu" role="navigation">
+            <ul>
+                <li><a href="https://medium.com/@priyanshuahir01/top-10-tips-for-skyrocketing-your-typing-speed-01a293efc065"
+                        target="_blank">Top 10 Tips for Improving Your Typing Speed</a></li>
+                <li><a href="https://medium.com/@priyanshuahir01/the-crucial-role-of-touch-typing-in-programming-31417d7babdc"
+                        target="_blank">The Role of Touch Typing in Programming</a></li>
+                <li><a href="https://medium.com/@priyanshuahir01/typing-and-health-striking-a-balance-for-well-being-cbc6db74e15b"
+                        target="_blank">Typing and Health</a></li>
+                <li><a href="https://medium.com/@priyanshuahir01/the-ergonomic-imperative-unlocking-the-full-potential-of-typing-75908a8f23ee"
+                        target="_blank">The Importance of Ergonomics in Typing</a></li>
+                <li><a href="https://medium.com/@priyanshuahir01/mastering-precision-overcoming-common-typing-mistakes-with-ease-3a7ea5a665c2"
+                        target="_blank">How to Overcome Common Typing Mistakes</a></li>
+            </ul>
+        </nav>
+
+        <div class="speedy-footer">
+            <div class="mb-4">
+                <h3>Rate My Work <span>🤗</span></h3>
+                <form class="speedy-rating-form" action="." netlify>
+                    <div class="stars" id="stars"></div>
+                    <input type="text" id="rating" name="rating" value="0" style="display: none;">
+                    <p id="selectedRating"></p>
+                    <div class="submit-button"></div>
+                </form>
+            </div>
+            <p class="pfooter">
+                Copyright &copy;
+                <script>document.write(new Date().getFullYear());</script> All rights reserved | This project is made
+                <i class="fa fa-heart" aria-hidden="true"></i> by <a
+                    href="https://github.com/Yash77929" target="_blank">Yash Singh</a>
+            </p>
+        </div>
+    </aside>
+    <div class="div-1">
+        <h2>Start typing</h2>
+        <div class="filter">
+            <div class="time-container">
+                <p>Time: </p>
+                <button id="seconds-15" class="time active seconds" onclick="toggleTime()">15s</button>
+                <button id="seconds-60" class="time" onclick="toggleTime()">60s</button>
+            </div>
+
+        </div>
+
+        <p id="random-text"></p>
+        <textarea id="textbox" placeholder="start writing...."></textarea>
+        <div class="stats-container">
+            <div class="stats">
+                <p>Speed: <span id="speed">0 WPM</span></p>
+                <p>Correct: <span id="correct">0</span></p>
+                <p>Wrong: <span id="wrong">0</span></p>
+            </div>
+            <button id="restart" onclick="restart()">Restart</button>
+            <form id="user-data" action="." netlify>
+                <input type="text" id="wpm" name="WPM" value="0" style="display: none;">
+                <input type="text" id="sound" name="Switch" value="0" style="display: none;">
+            </form>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
